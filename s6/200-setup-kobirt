@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bash
+
+set -eo pipefail
+
+if [ -d /home/user/XMUM-roommate-bot ]; then
+    echo 'src exists.'
+    exit 0
+fi
+
+cd /home/user
+git clone -b master https://github.com/bdbai/XMUM-roommate-bot
+cd ./XMUM-roommate-bot
+npm install
+cp data.sample.json data.json
+

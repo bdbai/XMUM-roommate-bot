@@ -1,0 +1,33 @@
+{
+  "name": "xmum-roommate-bot",
+  "version": "0.1.0",
+  "description": "A QQbot for XMUM students to find their roommates.",
+  "main": "server.js",
+  "author": "bdbai <bdbaiapp@163.com>",
+  "license": "GPL-3.0+",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bdbai/XMUM-roommate-bot.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "leancloud-storage": "^1.5.3",
+    "node-fetch": "^1.6.3",
+    "node-schedule": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node ./out/server.js"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.8",
+    "@types/body-parser": "^1.16.5",
+    "@types/express": "^4.0.37",
+    "@types/node": "^8.0.26",
+    "@types/node-fetch": "^1.6.7",
+    "commander": "^2.9.0"
+  }
+}
